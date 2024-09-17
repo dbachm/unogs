@@ -1,0 +1,15 @@
+{
+  "name": "unogs",
+  "version": "1.0.0",
+  "description": "search unogs",
+  "main": "unogs.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Daniel Bachmann",
+  "license": "ISC",
+  "dependencies": {
+    "node-html-parser": "^6.1.13",
+    "puppeteer": "^23.3.0"
+  }
+}
