@@ -35,7 +35,7 @@ async function doSearch(searchstr, year) {
     console.log('search '+searchstr +' (year: '+year+')');
     browser = await puppeteer.launch();
     const page = await browser.newPage();
-    await page.goto('https://unogs.com/search/'+encodeURIComponent(searchstr));
+    await page.goto('https://unogs.com/search/'+encodeURIComponent(searchstr), { timeout: 10000 });
 
     //console.log('New page url:' + page.url());
     await page.waitForSelector('div.results div.videodiv');
