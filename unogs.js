@@ -76,7 +76,8 @@ async function doSearch(searchstr, year) {
         break;
     }
   } catch (e) {
-    console.log(e);
+    if (e.name != 'TimeoutError')
+      console.log(e);
   } finally {
     browser.close();
   }
